@@ -2,16 +2,124 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Starbuck-Homepage</title>
+    <title>Starbucks Home Page</title>
 </head>
 
 <body>
-    
-    <script src="main.js"></script>
+    <header class="navbar">
+        <nav class="navbar-container">
+            <div class="navbar-brand">
+                <a><img src="./img/logo.svg" alt=""></a>
+            </div>
+
+            <ul class="navbar-nav-left" role="list">
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+                <li>
+                    <a href="#">Rewards</a>
+                </li>
+                <li>
+                    <a href="#">Gift Cards</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav-right" role="list">
+                <li>
+                    <a href="#">
+                        <img src="img/marker.svg" alt="" />
+                        <span>Find a store</span>
+                    </a>
+                </li>
+                <li><button class="btn btn-dark-outline">Sign in</button></li>
+                <li><button class="btn btn-dark">Join now</button></li>
+            </ul>
+            <!-- Hamburger Menu -->
+            <button type="button" class="hamburger" id="menu-btn">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </nav>
+    </header>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+        <ul>
+            <li>
+                <a href="#">Menu</a>
+            </li>
+            <li>
+                <a href="#">Rewards</a>
+            </li>
+            <li>
+                <a href="#">Gift Cards</a>
+            </li>
+        </ul>
+
+        <div class="mobile-menu-bottom">
+            <button class="btn btn-dark-outline">Sign in</button>
+            <button class="btn btn-dark">Join now</button>
+            <div>
+                <a href="#">
+                    <img src="img/marker.svg" alt="" />
+                    <span>Find a store</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <main class="container">
+        <!-- boxa -->
+        <section class="box box-a bg-primary grid-col-2">
+            <img src="img/137-78735.jpg" alt="img">
+            <div class="box-text">
+                <h3 class="text-md">Summer is brighter with free treats.*</h3>
+                <button class="btn btn-light-outline">Join Starbucks® Rewards</button>
+            </div>
+        </section>
+
+        <!-- boxb -->
+        <section class="box box-b grid-reversed bg-orage grid-col-2">
+            <img src="img/137-79187.jpg" alt="img">
+            <div class="box-text">
+                <h3 class="text-lg">Back-to-school smiles</h3>
+                <p>A Starbucks eGift makes an A+ treat for students, teachers and school support staff.</p>
+                <button class="btn btn-dark-outline">Send an eGift</button>
+            </div>
+        </section>
+
+        <!-- boxc -->
+        <section class="box box-b bg-mistyrose bg- grid-col-2">
+            <img src="img/137-78796.jpg" alt="img">
+            <div class="box-text">
+                <h3 class="text-lg">Summer’s brightest new drinks</h3>
+                <p>Introducing the Pineapple Passionfruit Starbucks Refreshers® beverage and the Starbucks® Paradise
+                    Drink with creamy
+                    coconutmilk.
+                </p>
+                <button class="btn btn-dark-outline">Learn more</button>
+            </div>
+        </section>
+
+        <!-- boxd -->
+        <section class="box box-a bg-indianRed grid-col-2">
+            <img src="img/137-78943.jpg" alt="img">
+            <div class="box-text">
+                <h3 class="text-lg">Cold brew for two</h3>
+                <p>Try the new Chocolate Cream Cold Brew with silky, chocolaty cold foam. Or go for a Vanilla Sweet
+                    Cream Cold Brew with
+                    house-made vanilla-flavored sweet cream.
+                </p>
+                <button class="btn btn-light-outline">Send an eGift</button>
+            </div>
+        </section>
+
+    </main>
 </body>
 
 </html>
